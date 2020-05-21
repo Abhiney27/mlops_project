@@ -8,7 +8,7 @@ from keras import backend as K
 
 batch_size = 128
 num_classes = 10
-epochs = 12
+epochs = 5
 
 # input image dimensions
 img_rows, img_cols = 28, 28
@@ -50,7 +50,7 @@ model.add(Dropout(0.5))
 model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss=keras.losses.categorical_crossentropy,
-              optimizer=keras.optimizers.Adadelta(),
+              optimizer=keras.optimizers.Adam(),
               metrics=['accuracy'])
 
 model.fit(x_train, y_train,
