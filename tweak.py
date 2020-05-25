@@ -60,7 +60,7 @@ model.fit(x_train, y_train,
 score = model.evaluate(x_test, y_test, verbose=0)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
-if score[1] >=0.995:
-    then print('accuracy is greater than 99.5%')
+if score[1] >=0.995: 
+     print('accuracy >= 99.5%')
 else:
     print('fail')
