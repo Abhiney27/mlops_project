@@ -64,6 +64,6 @@ print('Test accuracy:', score[1])
 if score[1] >= 0.995:
     print('success')
 else:
-    print('fail')
+    print('accuracy < 99.5%')
 
 
